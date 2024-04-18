@@ -4,7 +4,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh "sudo npm install"
-               sh  sudo -A ditto -V /tmp/testserver.dst /
+               // sh  sudo -A ditto -V /tmp/testserver.dst /
                 sh "sudo npm run build"
             }
         }
